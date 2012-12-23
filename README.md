@@ -42,5 +42,5 @@ Limitations:
 - Each section is required to have `url` parameter (either absolute or relative).
 - CIDR mask is required for IP addresses.
 - Do not use CIDR mask different from `8`, `16`, `24` or `32`.
-- Geo IP tool uses configuration file geo.db located the same directory as geo.php.
-- All configurations should be done under "countries" section.
+- Geo IP tool uses configuration file `geo.db` located the same directory as `geo.php`.
+- All configurations should be done under `countries` parent section.
