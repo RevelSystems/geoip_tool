@@ -33,7 +33,7 @@ Rules matching behavior:
 - Tool looks for exact IP match (with CIDR "32")
 - Then IPs with "24", "16" and "8" CIDR are checked.
 - If hostip_service is set to true
--- checks hostip.info webservice for the country name using [APIs](http://www.programmableweb.com/api/hostip.info)
+  - checks hostip.info webservice for the country name using [APIs](http://www.programmableweb.com/api/hostip.info)
 - Uses default settings.
  
 Limitations:
