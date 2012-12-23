@@ -30,17 +30,17 @@ Configuration File (geo.db):
 Rules matching behavior:
 ------------------------
 
-- Tool looks for exact IP match (with CIDR "32")
-- Then IPs with "24", "16" and "8" CIDR are checked.
-- If hostip_service is set to true
-  - checks hostip.info webservice for the country name using [APIs](http://www.programmableweb.com/api/hostip.info)
+- Tool looks for exact IP match (with CIDR `32`).
+- Then IPs with `24`, `16` and `8` CIDR are checked.
+- If `hostip_service` is set to true:
+  - checks `hostip.info` webservice for the country name using [APIs](http://www.programmableweb.com/api/hostip.info)
 - Uses default settings.
- 
+
 Limitations:
 ------------
 
-- Each section is required to have "url" parameter (either absolute or relative).
+- Each section is required to have `url` parameter (either absolute or relative).
 - CIDR mask is required for IP addresses.
-- Do not use CIDR mask different from "8", "16", "24" or "32".
+- Do not use CIDR mask different from `8`, `16`, `24` or `32`.
 - Geo IP tool uses configuration file geo.db located the same directory as geo.php.
 - All configurations should be done under "countries" section.
