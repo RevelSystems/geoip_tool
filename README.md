@@ -3,7 +3,7 @@ geoip_tool
 
 PHP tool for Geo IP configuration
 
-This tool is using YAML configuration file, parsed via [Spyc](https://github.com/mustangostang/spyc).
+This uses YAML configuration file, parsed via [Spyc](https://github.com/mustangostang/spyc).
 
 Configuration File (geo.db):
 ----------------------------
