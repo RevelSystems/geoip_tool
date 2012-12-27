@@ -77,7 +77,7 @@
   foreach ($config["countries"] as &$country)
   {
     $keys = array_keys ($country);
-    $config_country = strtolower($keys[0]);    
+    $config_country = strtolower($keys[0]);
     $values = $country[$keys[0]];
 
     if (!array_key_exists("url", $values))
@@ -144,7 +144,7 @@
     }
   }
 
-  if(strlen($target_url) > 0)
+  if(NULL != $target_url and strlen($target_url) > 0 and "none" != strtolower($target_url) and "null" != strtolower($target_url))
   {
     print '<meta http-equiv="refresh" content="0;url='.$target_url.'"/>';
     exit;
