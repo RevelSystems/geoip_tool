@@ -149,4 +149,8 @@
     print '<meta http-equiv="refresh" content="0;url='.$target_url.'"/>';
     exit;
   }
+  else
+  {
+    include 'index.php';
+  }
 ?>
