@@ -91,7 +91,7 @@
     {
       array_push($results[5], $url);
     } 
-    if (array_key_exists("hostip_service", $values) && true == $values["hostip_service"])
+    if (array_key_exists("hostip_service", $values) && true == $values["hostip_service"] && strtolower($config_country) == strtolower($geo_country))
     {
       array_push($results[4], $url);
     }   
