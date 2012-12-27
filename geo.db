@@ -1,15 +1,11 @@
 countries:
   - default:
-      url: http://revelsystems.com/
+      url: none
   - admin:
       IP:
         - 75.94.141.120/32 #chris
         - 96.24.78.238/32 #chris
-        - 178.165.58.116/32 #max
       url: /wp-admin/
-  - Ukraine:
-      hostip_service: true
-      url: http://www1.revelsystems.com/
   - Australia:
       hostip_service: true
       IP:
