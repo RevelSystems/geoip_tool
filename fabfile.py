@@ -29,6 +29,7 @@ for (role, hosts) in hostmaps.iteritems():
     env.roledefs[role] = hosts.values()
 
 def rewrite_rules(path=DEFAULT_PATH):
+    """Deploys rewrite rules."""
     remote_path = os.path.join(path, ".htaccess")
 
     geo_config = [
@@ -68,6 +69,14 @@ def rewrite_rules(path=DEFAULT_PATH):
 
 def deploy(path=DEFAULT_PATH):
     """Deploys ip tool to remote server."""
-    put("geo.db", path)
-    put("geo.php", path)
-    put("Spyc.php", path)
+    files = [
+        "geo.db",
+        "geo.php",
+        "Spyc.php"
+    ]
+
+    for file in files:
+        put(file, path)
+        sudo("chown %s:%s %s" % (WWW_USER, WWW_USER, os.path.join(path, file)))
+
+    rewrite_rules(path=path)
