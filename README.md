@@ -25,7 +25,7 @@ Configuration File (geo.db):
           IP:
             - 218.185.232.0/24
             - 216.220.208.0/24
-          url: http://au.revelsystems.com/
+          url: http://revelsystems.com.au/
 
 Rules matching behavior:
 ------------------------
