@@ -12,8 +12,8 @@ countries:
           - 178.165.59.0/24
         url: http://revelsystems.com/
   - Australia:
-      hostip_service: true
-      IP:
-        - 218.185.232.0/24
-        - 216.220.208.0/24
-      url: http://revelsystems.com.au/
+        hostip_service: true
+        IP:
+          - 218.185.232.0/24
+          - 216.220.208.0/24
+        url: http://revelsystems.com.au/
