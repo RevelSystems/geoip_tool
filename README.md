@@ -63,4 +63,5 @@ Working with repo:
 ####Deploying updates
 
     #assuming current directory is geoip_tool
+    git pull
     fab -R development deploy
