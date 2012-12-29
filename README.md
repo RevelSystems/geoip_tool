@@ -44,3 +44,23 @@ Limitations:
 - Do not use CIDR mask different from `8`, `16`, `24` or `32`.
 - Geo IP tool uses configuration file `geo.db` located the same directory as `geo.php`.
 - All configurations should be done under `countries` parent section.
+ 
+Working with repo:
+------------------
+
+####Cloning repo
+
+    git clone git@github.com:RevelSystems/geoip_tool.git
+    cd geoip_tool
+    
+####Pushing local changes
+
+    #assuming current directory is geoip_tool
+    vim geo.db
+    git commit -am "updated geo.db"
+    git push
+    
+####Deploying updates
+
+    #assuming current directory is geoip_tool
+    fab -R development deploy
