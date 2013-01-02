@@ -15,9 +15,7 @@ hostmaps = \
     {
         'production':
         {
-            'www1': 'www1.revelsystems.com',
-            'www2': 'www2.revelsystems.com',
-            'au': 'au.revelsystems.com'
+            'www1': 'revelweb.revelup.com'
         },
         'development':
         {
