@@ -144,7 +144,8 @@
     }
   }
 
-  $current_url = $_SERVER['QUERY_STRING'];
+  $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https')  === FALSE ? 'http' : 'https';
+  $current_url = $protocol."://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
   if(NULL != $target_url and strlen($target_url) > 0 and "none" != strtolower($target_url) and "null" != strtolower($target_url) and strtolower($current_url) != strtolower($target_url))
   {
     print '<meta http-equiv="refresh" content="0;url='.$target_url.'"/>';
