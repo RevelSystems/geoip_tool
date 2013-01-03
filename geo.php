@@ -144,7 +144,8 @@
     }
   }
 
-  if(NULL != $target_url and strlen($target_url) > 0 and "none" != strtolower($target_url) and "null" != strtolower($target_url))
+  $current_url = $_SERVER['QUERY_STRING'];
+  if(NULL != $target_url and strlen($target_url) > 0 and "none" != strtolower($target_url) and "null" != strtolower($target_url) and strtolower($current_url) != strtolower($target_url))
   {
     print '<meta http-equiv="refresh" content="0;url='.$target_url.'"/>';
     exit;
