@@ -6,6 +6,10 @@ countries:
         - 75.94.141.121/32 #chris
         - 96.24.78.238/32 #chris
       url: /wp-admin/
+  - at_work:
+      IP:
+        - 192.127.94.7
+      url: /hard-at-work/
   - Ukraine:
       hostip_service: true
       IP:
