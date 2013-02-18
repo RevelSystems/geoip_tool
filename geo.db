@@ -8,7 +8,10 @@ countries:
       url: /wp-admin/
   - at_work:
       IP:
-        - 192.127.94.7
+        - 178.165.58.116/32
+        - 192.127.94.7/32
+        - 74.201.7.114/32
+        - 74.201.7.126/32
       url: /hard-at-work/
   - Ukraine:
       hostip_service: true
