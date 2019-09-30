@@ -1,3 +1,8 @@
+This repository has been imported to GitLab. If you don't have an account in GitLab - please contact OPS/CO team.
+============
+https://gitlab.com/revelsystems/archived-projects/geoip_tool
+
+
 geoip_tool
 ==========
 
